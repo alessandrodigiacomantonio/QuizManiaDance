@@ -41,7 +41,6 @@
   height: 100vh;
   margin: 0 auto;
   text-align: center;
-  /* font-family: 'Kumar One'; */
   font-family: 'Overpass', sans-serif;
   font-weight: 700;
   cursor: default;
@@ -61,7 +60,7 @@
 .wrapper-quiz {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
 }
@@ -70,8 +69,10 @@
   position: relative;
   width: 100%;
   height: calc(100% / 3);
-  box-shadow: 7px 7px 10px grey;
+  margin-top: 50px;
   border-radius: 100px 100px 50px 50px;
+  padding: 20px;
+  box-shadow: 7px 7px 10px grey;
   font-size: 1.5vw;
 }
 .main__question:hover {
@@ -83,18 +84,23 @@
 .main__question__content {
   margin: auto;
 }
+.wrapper-answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: calc((100% / 3)*2);
+}
 .row_answers {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  height: calc(100% / 5);
+  height: calc(100% / 4);
 }
 .main__answer {
   display: flex;
   position: relative;
   width: 35%;
-  height: 90%;
-  margin: auto 0;
+  /* margin: auto 0; */
   padding: 20px;
   background-color: #48A898;
   border: 2px solid #48A898;
@@ -126,6 +132,12 @@
   width: 40%;
   height: 30vh;
   margin: 0 auto;
+}
+.main__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
 }
 [class*=main__buttons_] {
   position: relative;
@@ -220,5 +232,46 @@
   }
   to {
     transform: rotate(0);
+  }
+}
+
+@media screen and (max-width: 487px) {
+  .main__message {
+    font-size: 4.9vw;
+  }
+  .end-game {
+    height: calc((100% / 4)*3);
+  }
+  .main__question {
+    font-size: 4vw;
+    margin-top: 0;
+  }
+  .wrapper-answers {
+    height: auto;
+  }
+  .row_answers {
+    height: auto;
+    flex-flow: wrap;
+  }
+  .main__answer {
+    width: 100%;
+    margin: 15px 0 0 0;
+    height: auto;
+    padding: 15px;
+  }
+  .main__answer__content {
+    font-size: 3.5vw;
+  }
+  .main__gift {
+    width: 70%;
+    height: 30vh;
+  }
+  .main__buttons {
+    height: auto;
+  }
+  [class*=main__buttons_] {
+    height: 10vh;
+    width: 10vh;
+    font-size: 2.5vw;
   }
 }
