@@ -75,7 +75,7 @@
   font-size: 1.5vw;
 }
 .main__question:hover {
-  animation: shift 2s linear infinite;
+  animation: shake 1s ease-in-out 5;
 }
 .main__question__content {
   margin: auto;
@@ -118,6 +118,11 @@
 .main__answer__content {
   margin: auto;
   font-size: 1vw;
+}
+.main__gift {
+  width: 40%;
+  height: 30vh;
+  margin: 0 auto;
 }
 [class*=main__buttons_] {
   position: relative;
@@ -197,18 +202,18 @@
   }
 }
 
-@keyframes shift {
+@keyframes shake {
   from {
-    transform: translate(0);
+    transform: rotate(0);
   }
   25% {
-    transform: translateX(10%);
+    transform: rotate(0);
   }
   50% {
-    transform: translateX(0%);
+  transform: rotate(0);
   }
   75% {
-    transform: translateX(-10%);
+    transform: rotate(0);
   }
   to {
     transform: translateX(0%);
