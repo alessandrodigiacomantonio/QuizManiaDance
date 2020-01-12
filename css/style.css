@@ -75,7 +75,10 @@
   font-size: 1.5vw;
 }
 .main__question:hover {
-  animation: shake 1s ease-in-out 5;
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: even;
+  animation-direction: alternate;
 }
 .main__question__content {
   margin: auto;
@@ -207,15 +210,15 @@
     transform: rotate(0);
   }
   25% {
-    transform: rotate(0);
+    transform: rotate(-1deg);
   }
   50% {
   transform: rotate(0);
   }
   75% {
-    transform: rotate(0);
+    transform: rotate(1deg);
   }
   to {
-    transform: translateX(0%);
+    transform: rotate(0);
   }
 }
