@@ -107,7 +107,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       if (manyTrue == j-1) {
         document.getElementsByClassName('main__gift')[0].classList.remove('dis-none');
         document.getElementsByClassName('main__gift')[0].innerHTML = '<iframe class="dance-buddy"width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLj6Qo0so0ijrmUg1ZdoIQIQspD-8JCmpp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-        document.getElementsByClassName('main__message')[0].innerHTML = '<p>Wooah! Sei il <i class="fas fa-chess-king"></i> di QuizManiaDance!</p><p>Prendi le cuffie e spara a tutto volume</p><p>♫ Dance time ♪</p>';
+        document.getElementsByClassName('main__message')[0].innerHTML = '<p>Wooah! Sei il <i class="fas fa-chess-king"></i> di QuizManiaDance!</p><p>Prendi le cuffie e sparati la playlist a tutto volume</p><p>♫ Dance time ♪</p>';
       }
       document.getElementsByClassName('main__message')[0].className = 'main__message dis-flex';
     }
@@ -135,7 +135,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       if (manyTrue == j-1) {
         document.getElementsByClassName('main__gift')[0].classList.remove('dis-none');
         document.getElementsByClassName('main__gift')[0].innerHTML = '<iframe class="dance-buddy"width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLj6Qo0so0ijrmUg1ZdoIQIQspD-8JCmpp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-        document.getElementsByClassName('main__message')[0].innerHTML = '<p>Wooah! Sei il <i class="fas fa-chess-king"></i> di QuizManiaDance!</p><p>Prendi le cuffie e spara a tutto volume</p><p>♫ Dance time ♪</p>';
+        document.getElementsByClassName('main__message')[0].innerHTML = '<p>Wooah! Sei il <i class="fas fa-chess-king"></i> di QuizManiaDance!</p><p>Prendi le cuffie e sparati la playlist a tutto volume</p><p>♫ Dance time ♪</p>';
       }
       document.getElementsByClassName('main__message')[0].className = 'main__message dis-flex';
     }
@@ -163,7 +163,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       if (manyTrue == j-1) {
         document.getElementsByClassName('main__gift')[0].classList.remove('dis-none');
         document.getElementsByClassName('main__gift')[0].innerHTML = '<iframe class="dance-buddy"width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLj6Qo0so0ijrmUg1ZdoIQIQspD-8JCmpp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-        document.getElementsByClassName('main__message')[0].innerHTML = '<p>Wooah! Sei il <i class="fas fa-chess-king"></i> di QuizManiaDance!</p><p>Prendi le cuffie e spara a tutto volume</p><p>♫ Dance time ♪</p>';
+        document.getElementsByClassName('main__message')[0].innerHTML = '<p>Wooah! Sei il <i class="fas fa-chess-king"></i> di QuizManiaDance!</p><p>Prendi le cuffie e sparati la playlist a tutto volume</p><p>♫ Dance time ♪</p>';
       }
       document.getElementsByClassName('main__message')[0].className = 'main__message dis-flex';
     }
@@ -191,7 +191,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       if (manyTrue == j-1) {
         document.getElementsByClassName('main__gift')[0].classList.remove('dis-none');
         document.getElementsByClassName('main__gift')[0].innerHTML = '<iframe class="dance-buddy"width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLj6Qo0so0ijrmUg1ZdoIQIQspD-8JCmpp" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-        document.getElementsByClassName('main__message')[0].innerHTML = '<p>Wooah! Sei il <i class="fas fa-chess-king"></i> di QuizManiaDance!</p><p>Prendi le cuffie e spara a tutto volume</p><p>♫ Dance time ♪</p>';
+        document.getElementsByClassName('main__message')[0].innerHTML = '<p>Wooah! Sei il <i class="fas fa-chess-king"></i> di QuizManiaDance!</p><p>Prendi le cuffie e sparati la playlist a tutto volume</p><p>♫ Dance time ♪</p>';
       }
       document.getElementsByClassName('main__message')[0].className = 'main__message dis-flex';
     }
