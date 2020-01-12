@@ -168,6 +168,12 @@
 .dance-buddy:hover {
   animation-play-state: paused;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  display: none;
+}
 @keyframes dance {
   from {
     transform: scale(1) rotate(0)
