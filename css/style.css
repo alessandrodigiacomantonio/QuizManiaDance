@@ -114,8 +114,8 @@
 } */
 [class*=main__buttons_] {
   position: relative;
-  height: 100px;
-  width: 100px;
+  height: 14vh;
+  width: 14vh;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3P2AawXhB5qlIhq4a-EoS2T30amW1FnEj1AlQP6B-LkO9VhDL&s");
   background-position: center;
   background-size: cover;
@@ -139,10 +139,10 @@
   outline: none;
 }
 .main__buttons__play {
-  transform: scale(1.9);
+  transform: scale(1.4);
 }
 .main__buttons__play:active {
-  transform: scale(1.7);
+  transform: scale(1.3);
 }
 .bg-correct {
   background-color: green;
