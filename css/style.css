@@ -259,6 +259,9 @@
     height: auto;
     padding: 15px;
   }
+  .main__answer:hover {
+    animation: none;
+  }
   .main__answer__content {
     font-size: 3.5vw;
   }
