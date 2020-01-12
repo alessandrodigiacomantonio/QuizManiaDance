@@ -62,13 +62,13 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
   // chosen = Math.floor(Math.random()*8);
   var quiz = [];
   quiz = quizList[j];
-  // function sleep(milliseconds) {
-  //   const date = Date.now();
-  //   let currentDate = null;
-  //   do {
-  //     currentDate = Date.now();
-  //   } while (currentDate - date < milliseconds);
-  // }
+  function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
   var j = 0;
   var manyTrue = 0;
   document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];

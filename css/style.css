@@ -109,9 +109,15 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-/* .main_buttons {
-  height: calc(100% / 3);
-} */
+.main__answer:active {
+  transform: scale(0.9);
+  animation-play-state: paused;
+}
+.main__answer__content {
+  margin: auto;
+  font-size: 18px;
+  user-select: none;
+}
 [class*=main__buttons_] {
   position: relative;
   height: 14vh;
@@ -123,7 +129,6 @@
   border-radius: 50%;
   border: 1px solid yellow;
   box-shadow: 3px 3px 20px yellow;
-  /* color: white; */
   font-family: 'Kumar One';
   color: #915700;
   cursor: pointer;
@@ -144,29 +149,27 @@
 .main__buttons__play:active {
   transform: scale(1.3);
 }
-.bg-correct {
-  background-color: green;
-}
-.bg-error {
-  background-color: brown;
-}
-.main__answer:active {
-  transform: scale(0.9);
-  animation-play-state: paused;
-}
-.main__answer__content {
-  margin: auto;
-  font-size: 18px;
-}
 .dance-buddy {
   animation-name: dance;
-  animation-duration: 0.933s;
+  animation-duration: 0.932s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 .dance-buddy:hover {
   animation-play-state: paused;
+}
+.answer--correct {
+  background-color: green;
+}
+.answer--correct:hover {
+  animation: none;
+}
+.answer--error {
+  background-color: brown;
+}
+.answer--correct:hover {
+  animation: none;
 }
 ::-webkit-scrollbar {
   display: none;
