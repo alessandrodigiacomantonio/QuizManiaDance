@@ -43,10 +43,11 @@
   /* font-family: 'Kumar One'; */
   font-family: 'Overpass', sans-serif;
   font-weight: 700;
+  cursor: default;
 }
 .main__message {
   flex-direction: column;
-  height: calc(100% / 1.5);
+  height: calc(100% / 3);
   justify-content: space-evenly;
   align-items: center;
   font-size: 60px;
@@ -122,6 +123,7 @@
   box-shadow: 3px 3px 20px yellow;
   /* color: white; */
   font-family: 'Kumar One';
+  cursor: pointer;
   transition: 0.2s;
 }
 [class*=main__buttons_]:hover {
@@ -141,6 +143,7 @@
 }
 .main__answer:active {
   transform: scale(0.9);
+  animation-play-state: paused;
 }
 .main__answer__content {
   margin: auto;
@@ -148,10 +151,13 @@
 }
 .dance-buddy {
   animation-name: dance;
-  animation-duration: 0.95s;
+  animation-duration: 0.933s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+.dance-buddy:hover {
+  animation-play-state: paused;
 }
 @keyframes dance {
   from {
