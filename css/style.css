@@ -261,6 +261,7 @@
   }
   .main__answer:hover {
     animation: none;
+    border-radius: 50px;
   }
   .main__answer__content {
     font-size: 2vw;
