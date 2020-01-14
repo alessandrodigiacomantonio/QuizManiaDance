@@ -1,7 +1,7 @@
 document.getElementsByClassName('end-game')[0].classList.add('dis-none');
 document.getElementsByClassName('main__gift')[0].classList.add('dis-none');
 document.getElementsByClassName('main__message')[0].classList.add('dis-flex');
-document.getElementsByClassName('main__message')[0].innerHTML = '<p>Benvenuto in ♫ Quiz Mania Dance ♪</p><p>Se riuscirai a rispondere a tutti i quiz, riceverai un premio <i class="fas fa-gifts"></i></p>';
+document.getElementsByClassName('main__message')[0].innerHTML = '<p>Benvenuto in ♫ Quiz Mania Dance ♪</p><p>Se riuscirai a rispondere correttamente a tutti e 9 i quiz, riceverai un premio <i class="fas fa-gifts"></i></p>';
 document.getElementsByClassName('main__buttons__refresh')[0].classList.add('dis-none');
 document.getElementsByClassName('main__buttons__play')[0].addEventListener('click', function play() {
   document.getElementsByClassName('end-game')[0].classList.remove('dis-none');
@@ -59,19 +59,18 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
   var quiz49 = [];
   var quiz50 = [];
   var quizList = [quiz1, quiz2, quiz3, quiz4, quiz5, quiz6, quiz7, quiz8, quiz9, quiz10, quiz11, quiz12, quiz13, quiz14, quiz15, quiz16, quiz17, quiz18, quiz19, quiz20, quiz21, quiz22, quiz23, quiz24, quiz25,quiz26, quiz27, quiz28, quiz29, quiz30, quiz31, quiz32, quiz33, quiz34, quiz35, quiz36, quiz37, quiz38, quiz39, quiz40, quiz41, quiz42, quiz43, quiz44, quiz45, quiz46, quiz47, quiz48, quiz49, quiz50];
-  // var chosen;
-  // chosen = Math.floor(Math.random()*8);
   var quiz = [];
   quiz = quizList[j];
-  function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
+  // function sleep(milliseconds) {
+  //   const date = Date.now();
+  //   let currentDate = null;
+  //   do {
+  //     currentDate = Date.now();
+  //   } while (currentDate - date < milliseconds);
+  // }
   var j = 0;
   var manyTrue = 0;
+  document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
   document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
   if (quizList[j][0] == 'html') {
     document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -89,6 +88,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       manyTrue++;
     }
     console.log(j, manyTrue);
+    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
     document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
     if (quizList[j][0] == 'html') {
       document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -117,6 +117,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       manyTrue++;
     }
     console.log(j,manyTrue);
+    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
     document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
     if (quizList[j][0] == 'html') {
       document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -145,6 +146,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       manyTrue++;
     }
     console.log(j,manyTrue);
+    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
     document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
     if (quizList[j][0] == 'html') {
       document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -173,6 +175,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       manyTrue++;
     }
     console.log(j,manyTrue);
+    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
     document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
     if (quizList[j][0] == 'html') {
       document.getElementsByClassName('main__question')[0].className ='main__question bg-html';

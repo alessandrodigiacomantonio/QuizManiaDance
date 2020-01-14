@@ -75,13 +75,19 @@
   padding: 20px;
   box-shadow: 7px 7px 10px grey;
   font-size: 1.5vw;
-  overflow-y : auto;
+  overflow-y: auto;
 }
 .main__question:hover {
   animation-name: shake;
   animation-duration: 1s;
   animation-iteration-count: even;
   animation-direction: alternate;
+}
+.main__question__number {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translatex(-50%);
 }
 .main__question__content {
   margin: auto;
@@ -102,7 +108,6 @@
   display: flex;
   position: relative;
   width: 35%;
-  /* margin: auto 0; */
   padding: 20px;
   background-color: #48A898;
   border: 2px solid #48A898;
@@ -120,7 +125,8 @@
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: reverse;
+  animation-delay: 0.15s;
 }
 .main__answer:active {
   transform: scale(0.9);
