@@ -237,7 +237,7 @@
   }
 }
 
-@media screen and (max-width: 487px) {
+@media screen and (max-width: 700px) {
   .main__message {
     font-size: 4.9vw;
   }
