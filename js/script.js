@@ -17,8 +17,8 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
   var quiz7 = ['js', 'Quale numero sarà stampato in console tramite il codice " for (var iabile = -3; iabile <= -2; iabile++); console.log(iabile) " ?', 'Nulla, il ciclo non funzionerebbe', '-2', '-3','-1','-1'];
   var quiz8 = ['css', 'Quale artista cantava il celebre brano "CheckBomb" ?', 'Bruce Springsteen', 'Mousse T.', 'Alessandro Sainato', 'Tom Jones', 'Alessandro Sainato'];
   var quiz9 = ['css', 'Supponendo di avere " <div id="quadrato_UNO"></div>" e "<div id="quadrato_DUE"></div>" che andranno a formare due distinti quadrati. Supponendo che saranno uno sovrapposto all\'altro, quale mi asperò di vedere se nel mio foglio di stile avrò: "#quadrato_UNO {position: static; z-index: 2; } e #quadrato_DUE {position: absolute; z-index: 1 }" ?', '#quadrato_DUE: \'position: static\' non può struttare l\'attributo \'z-index\'', "#quadrato_DUE: \'position: static\' non è un valore esistente per l\'attributo position definito in #quadrato_UNO", '#quadrato_UNO: \'position: static\' permette di posizionare l\'elemento sempre davanti ad elementi con \'position: absolute\'', '#quadrato_UNO: ha uno z-index più alto', '#quadrato_DUE: \'position: static\' non può struttare l\'attributo \'z-index\''];
-  var quiz10 = ['#quadrato_DUE: \'position: static\' non permette di struttare l\'attributo \'z-index\''];
-  var quiz11 = [];
+  var quiz10 = ['css', 'In CSS, cos\'è " opacity: "', 'Una funzione', 'Un attributo', 'Una proprietà', 'Un valore', 'Un attributo'];
+  var quiz11 = ['html', 'Quale delle seguenti affermazioni riguardanti il tag <header></header> è vera?', 'Deve essere scritto sempre come primo elemento del <body></body>', 'Deve essere scritto come primo elemento del <body></body>, ma solo se abbiamo intenzione di inserire anche <main></main> e <footer></footer>', 'Possiamo scriverlo o meno, non abbiamo alcun vincolo di inserimento dell\'<header></header>', 'Può essere scritto, a patto che ci siano anche <main></main> e <footer></footer>', 'Possiamo scriverlo o meno, non abbiamo alcun vincolo di inserimento dell\'<header></header>'];
   var quiz12 = [];
   var quiz13 = [];
   var quiz14 = [];
@@ -70,7 +70,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
   // }
   var j = 0;
   var manyTrue = 0;
-  document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
+  document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/11';
   document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
   if (quizList[j][0] == 'html') {
     document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -88,7 +88,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       manyTrue++;
     }
     console.log(j, manyTrue);
-    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
+    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/11';
     document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
     if (quizList[j][0] == 'html') {
       document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -101,7 +101,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       document.getElementsByClassName('main__answer__content')[i].textContent = quizList[j][i+2];
     }
     j++;
-    if (j > 9) {
+    if (j > 11) {
       document.getElementsByClassName('end-game')[0].classList.add('dis-none');
       document.getElementsByClassName('main__message')[0].innerHTML = '<p>Peccato! Non sei riuscito a rispondere correttamente a tutti i quiz..</p> <p>ma non disparare!!</p> <p>Riprovaci per ottenere il premio!</p><p>Tanto le domande son le stesse</p><p>vedrai che ce la farai <i class="fab fa-earlybirds"></i></p>';
       if (manyTrue == j-1) {
@@ -117,7 +117,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       manyTrue++;
     }
     console.log(j,manyTrue);
-    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
+    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/11';
     document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
     if (quizList[j][0] == 'html') {
       document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -130,7 +130,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       document.getElementsByClassName('main__answer__content')[i].textContent = quizList[j][i+2];
     }
     j++;
-    if (j > 9) {
+    if (j > 11) {
       document.getElementsByClassName('end-game')[0].classList.add('dis-none');
       document.getElementsByClassName('main__message')[0].innerHTML = '<p>Peccato! Non sei riuscito a rispondere correttamente a tutti i quiz..</p> <p>ma non disparare!!</p> <p>Riprovaci per ottenere il premio!</p><p>Tanto le domande son le stesse</p><p>vedrai che ce la farai <i class="fab fa-earlybirds"></i></p>';
       if (manyTrue == j-1) {
@@ -146,7 +146,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       manyTrue++;
     }
     console.log(j,manyTrue);
-    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
+    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/11';
     document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
     if (quizList[j][0] == 'html') {
       document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -159,7 +159,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       document.getElementsByClassName('main__answer__content')[i].textContent = quizList[j][i+2];
     }
     j++;
-    if (j > 9 ) {
+    if (j > 11) {
       document.getElementsByClassName('end-game')[0].classList.add('dis-none');
       document.getElementsByClassName('main__message')[0].innerHTML = '<p>Peccato! Non sei riuscito a rispondere correttamente a tutti i quiz..</p> <p>ma non disparare!!</p> <p>Riprovaci per ottenere il premio!</p><p>Tanto le domande son le stesse</p><p>vedrai che ce la farai <i class="fab fa-earlybirds"></i></p>';
       if (manyTrue == j-1) {
@@ -175,7 +175,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       manyTrue++;
     }
     console.log(j,manyTrue);
-    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/9';
+    document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/11';
     document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
     if (quizList[j][0] == 'html') {
       document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -188,7 +188,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       document.getElementsByClassName('main__answer__content')[i].textContent = quizList[j][i+2];
     }
     j++;
-    if (j > 9) {
+    if (j > 11) {
       document.getElementsByClassName('end-game')[0].classList.add('dis-none');
       document.getElementsByClassName('main__message')[0].innerHTML = '<p>Peccato! Non sei riuscito a rispondere correttamente a tutti i quiz..</p> <p>ma non disparare!!</p> <p>Riprovaci per ottenere il premio!</p><p>Tanto le domande son le stesse</p><p>vedrai che ce la farai <i class="fab fa-earlybirds"></i></p>';
       if (manyTrue == j-1) {
