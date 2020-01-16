@@ -1,7 +1,8 @@
+var numQuiz = '11';
 document.getElementsByClassName('end-game')[0].classList.add('dis-none');
 document.getElementsByClassName('main__gift')[0].classList.add('dis-none');
 document.getElementsByClassName('main__message')[0].classList.add('dis-flex');
-document.getElementsByClassName('main__message')[0].innerHTML = '<p>Benvenuto in ♫ Quiz Mania Dance ♪</p><p>Se riuscirai a rispondere correttamente a tutti e 9 i quiz, riceverai un premio <i class="fas fa-gifts"></i></p>';
+document.getElementsByClassName('main__message')[0].innerHTML = '<p>Benvenuto in ♫ Quiz Mania Dance ♪</p><p>Se riuscirai a rispondere correttamente a tutti gli ' + numQuiz + ' quiz, riceverai un premio <i class="fas fa-gifts"></i></p>';
 document.getElementsByClassName('main__buttons__refresh')[0].classList.add('dis-none');
 document.getElementsByClassName('main__buttons__play')[0].addEventListener('click', function play() {
   document.getElementsByClassName('end-game')[0].classList.remove('dis-none');
@@ -70,7 +71,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
   // }
   var j = 0;
   var manyTrue = 0;
-  document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/11';
+  document.getElementsByClassName('main__question__number')[0].textContent = [j+1]+'/'+numQuiz;
   document.getElementsByClassName('main__question__content')[0].textContent = quizList[j][1];
   if (quizList[j][0] == 'html') {
     document.getElementsByClassName('main__question')[0].className ='main__question bg-html';
@@ -101,7 +102,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       document.getElementsByClassName('main__answer__content')[i].textContent = quizList[j][i+2];
     }
     j++;
-    if (j > 11) {
+    if (j > numQuiz) {
       document.getElementsByClassName('end-game')[0].classList.add('dis-none');
       document.getElementsByClassName('main__message')[0].innerHTML = '<p>Peccato! Non sei riuscito a rispondere correttamente a tutti i quiz..</p> <p>ma non disparare!!</p> <p>Riprovaci per ottenere il premio!</p><p>Tanto le domande son le stesse</p><p>vedrai che ce la farai <i class="fab fa-earlybirds"></i></p>';
       if (manyTrue == j-1) {
@@ -130,7 +131,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       document.getElementsByClassName('main__answer__content')[i].textContent = quizList[j][i+2];
     }
     j++;
-    if (j > 11) {
+    if (j > numQuiz) {
       document.getElementsByClassName('end-game')[0].classList.add('dis-none');
       document.getElementsByClassName('main__message')[0].innerHTML = '<p>Peccato! Non sei riuscito a rispondere correttamente a tutti i quiz..</p> <p>ma non disparare!!</p> <p>Riprovaci per ottenere il premio!</p><p>Tanto le domande son le stesse</p><p>vedrai che ce la farai <i class="fab fa-earlybirds"></i></p>';
       if (manyTrue == j-1) {
@@ -159,7 +160,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       document.getElementsByClassName('main__answer__content')[i].textContent = quizList[j][i+2];
     }
     j++;
-    if (j > 11) {
+    if (j > numQuiz) {
       document.getElementsByClassName('end-game')[0].classList.add('dis-none');
       document.getElementsByClassName('main__message')[0].innerHTML = '<p>Peccato! Non sei riuscito a rispondere correttamente a tutti i quiz..</p> <p>ma non disparare!!</p> <p>Riprovaci per ottenere il premio!</p><p>Tanto le domande son le stesse</p><p>vedrai che ce la farai <i class="fab fa-earlybirds"></i></p>';
       if (manyTrue == j-1) {
@@ -188,7 +189,7 @@ document.getElementsByClassName('main__buttons__play')[0].addEventListener('clic
       document.getElementsByClassName('main__answer__content')[i].textContent = quizList[j][i+2];
     }
     j++;
-    if (j > 11) {
+    if (j > numQuiz) {
       document.getElementsByClassName('end-game')[0].classList.add('dis-none');
       document.getElementsByClassName('main__message')[0].innerHTML = '<p>Peccato! Non sei riuscito a rispondere correttamente a tutti i quiz..</p> <p>ma non disparare!!</p> <p>Riprovaci per ottenere il premio!</p><p>Tanto le domande son le stesse</p><p>vedrai che ce la farai <i class="fab fa-earlybirds"></i></p>';
       if (manyTrue == j-1) {
